@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sequêcia de testes</h1>
+    <p>Testando..........</p>
+    <div id="teste"></div>
+    <script>
+        let teste = document.querySelector('div#teste');
+        for (var i = 0; i < 5; i++){
+            
+            setInterval(()=>{
+                teste.innerHTML = teste.innerHTML + 'olá!<br>'
+            }, 1000);
+            clearInterval()
+        };
+    </script>
+</body>
+</html>
